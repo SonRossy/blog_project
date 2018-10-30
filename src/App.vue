@@ -1,6 +1,7 @@
 <template>
   <div>
-  <router-view></router-view>
+    <app-header></app-header>
+    <router-view></router-view>
   </div>
 </template>
 
@@ -8,19 +9,21 @@
 import addBlog from './components/addBlog'
 import showBlog from './components/showBlog'
 import listBlogs from './components/listBlogs'
+import header from './components/header'
 
 export default {
   components: {
     'addBlog': addBlog,
     'show-blog': showBlog,
-    'list-blogs': listBlogs
+    'list-blogs': listBlogs,
+    'app-header': header
   }
 }
 </script>
 
 <style>
-body {
-  margin: 0;
-  font-family: 'Nunito SemiBold';
-}
+  body {
+    margin: 0;
+    font-family: 'Nunito SemiBold';
+  }
 </style>
