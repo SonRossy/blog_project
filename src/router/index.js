@@ -19,7 +19,7 @@ export default new Router({
       path: '/add', component: addBlog
     },
     {
-      path: 'blog/:id', component: singleBlog
+      path: '/blog/:id', component: singleBlog
     }
   ],
   mode: 'history'
